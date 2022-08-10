@@ -1,0 +1,115 @@
+body{
+
+    background-image: url(assets/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    background-color: #fff;
+    margin-right:   390px;
+    margin-top: 160px;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+.cont {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 40px auto;
+
+
+}
+
+
+
+
+.center-div .cont .title > h1 {
+   
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 25px;
+    color:#377D71;
+
+}
+
+
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+    
+
+.doctor{
+    background-image: url(/assets/doctor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.patient{
+    background-image: url(/assets/patient.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.text-doctor {
+    padding-top: 40px;
+
+}
+
+.text-doctor #demo{
+    margin-bottom: 5px;
+
+}
+
+
+.form-group{
+    padding-left: 5%;
+    padding-right: 5%;
+
+    margin-bottom: 30px;
+    border-color: #377D71;
+
+}
+
+
+.floor{
+    display: flex;
+
+}
+
+.floor  >p{
+    padding-left: 5%;
+}
+.floor >p >a {
+    border-bottom: 0;
+    text-decoration: none;
+    color:#377D71;
+}
+
+.floor .btn{
+    width: 90px;
+    margin-left: 25%;
+   background-color:#377D71;
+   border-color: #377D71;
+}
+
+.btn{
+    background-color: #377D71 ;
+    width:100px;
+    margin-left: 140px;
+    margin-bottom: 25px;
+}
+

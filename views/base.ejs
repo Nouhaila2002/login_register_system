@@ -1,0 +1,79 @@
+<%- include('header') -%>
+
+
+
+
+    <div class="text-center center-div" id="login">
+        <div class="cont w-25 border  py-5">
+            <% if(locals.logout){ %>
+                <div class="alter alter-suuccess text-center">
+                    <%= logout %>
+                </div>
+            <% } %>
+            <div class="title pd-5">
+                <h1 class="font-weight-bold">Choose Account Type</h1>
+                <!--<span>Log in for the existing user</span>-->
+            </div>
+
+        <div class="container2 ">
+        <div class="row rows-cols-2">
+            <div class="col doctor border active"  role="button" onclick="myFunction2()">
+                <h5>Doctor</h5>
+            </div>
+            <div class="col patient border"  role="button" onclick="myFunction()">
+                <h5>Patient</h5>
+            </div>
+        </div>
+        </div>
+
+        <div class="text-doctor">
+            <p id="demo">Hello doctor!</p>
+            <p>Please fill out the form below to get started</p>
+        </div>
+
+            <form action="/route/login" method="POST" class="pt-3">
+                <div class="form-group email">
+                    <input type="email" class="form-control" placeholder="Email" name="email">
+                    <!--<small class="form-text text-muted text-left">Register email address</small>-->
+                </div>
+                <div class="form-group password">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+
+
+                <div class="floor">
+                    <p>No account?<a href="route/register">Signup</a></p>
+                    <button type="submit" class="btn  btn-success" onClick="myFunction()" >Login</button>
+    
+                    
+                </div>
+
+
+            </form>
+
+            
+            
+
+        </div>
+    </div>
+
+
+
+
+    <script >
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello patient!";
+          }
+
+          function myFunction2() {
+            document.getElementById("demo").innerHTML = "Hello doctor!";
+          }
+        
+
+ 
+       
+    </script>
+
+<%- include('footer') -%>
+
